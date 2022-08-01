@@ -1,0 +1,123 @@
+#box{
+    box-shadow: cyan 14px 11px 25px 7px;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+#box-1{
+    box-shadow: inset cyan 14px 11px 25px 7px;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.filter-1{
+    filter: blur(1px);
+}
+
+.filter-2{
+    filter: brightness(0.9);
+}
+
+.filter-3{
+    filter:drop-shadow(34px 0px 0px black);
+}
+.filter-4{
+    filter: opacity(0.5);
+}
+.filter-5{
+
+}
+
+#img-1{
+    filter: blur(3px);
+}
+#img-2{
+    filter: brightness(0.5);
+}
+#img-3{
+    filter: contrast(0.5);
+}
+#img-4{
+    filter: drop-shadow(10px 13px 10px red);
+}
+#img-5{
+    filter: grayscale(0.7); 
+}
+#img-6{
+    filter: saturate(5);
+}
+
+#trans{
+ color: blue;   
+}
+.time{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+}
+
+.time:hover{
+    width: 100px;
+}
+
+.time-1{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    transition-timing-function: linear;
+    transition-duration: 2s;
+}
+.time-1:hover{
+    width: 100px;
+}
+
+.time-2{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+}
+.time-2:hover{
+    width: 100px;
+}
+
+.time-3{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+}
+.time-3:hover{
+    width: 100px;
+}
+
+.time-4{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 2s;
+}
+.time-4:hover{
+    width: 100px;
+}
+#trans.anim{
+animation-name: name;
+animation-duration: 6s;
+transition-delay: 1s;
+animation-timing-function: linear;
+transform: translateY(100px);
+}
+
+@keyframes name{
+    0%{transform: translate(0px);}
+    10%{transform: translate(100px);}
+    30%{transform: rotateY(100deg) translateY(100px);}
+    60%{transform:  translateY(300px);}
+    100%{transform: rotateY(0deg) translateY(100px);}
+}
